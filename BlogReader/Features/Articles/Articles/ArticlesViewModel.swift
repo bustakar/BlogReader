@@ -32,9 +32,9 @@ final class ArticlesViewModel: ObservableObject {
         
         
         articles = [
-            Article(title: "Downloading with Combine", content: "Combine is truly awesome framework and in this article we will go through every possible way of downloading data with it. We will use all kinds of publishers. We will filter data and handle errors in Combine way.", imageUrl: "1", isFavorite: false, createdAt: Date(), updatedAt: Date()),
-            Article(title: "Downloading with Combine", content: "Combine is truly awesome framework and in this article we will go through every possible way of downloading data with it. We will use all kinds of publishers. We will filter data and handle errors in Combine way.", imageUrl: "2", isFavorite: true, createdAt: Date(), updatedAt: Date()),
-            Article(title: "Downloading with Combine", content: "Combine is truly awesome framework and in this article we will go through every possible way of downloading data with it. We will use all kinds of publishers. We will filter data and handle errors in Combine way.", imageUrl: "3", isFavorite: false, createdAt: Date(), updatedAt: Date()),
+            Article(id: "1", title: "Downloading with Combine", content: "Combine is truly awesome framework and in this article we will go through every possible way of downloading data with it. We will use all kinds of publishers. We will filter data and handle errors in Combine way.", imageUrl: "1", isFavorite: false, createdAt: Date(), updatedAt: Date()),
+            Article(id: "2", title: "Downloading with Combine", content: "Combine is truly awesome framework and in this article we will go through every possible way of downloading data with it. We will use all kinds of publishers. We will filter data and handle errors in Combine way.", imageUrl: "2", isFavorite: true, createdAt: Date(), updatedAt: Date()),
+            Article(id: "3", title: "Downloading with Combine", content: "Combine is truly awesome framework and in this article we will go through every possible way of downloading data with it. We will use all kinds of publishers. We will filter data and handle errors in Combine way.", imageUrl: "3", isFavorite: false, createdAt: Date(), updatedAt: Date()),
 
         ]
     }

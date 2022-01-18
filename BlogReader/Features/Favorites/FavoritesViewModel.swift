@@ -22,10 +22,22 @@ final class FavoritesViewModel: ObservableObject {
     // MARK: Passing service as constructor parameter
     init(repository: CoreDataProtocol = BaseRepository()) {
         self.repository = repository
-        self.subscribeToFavorites()
+        self.loadFavorites()
+        
+//        self.subscribeToFavorites()
+    }
+    
+    // MARK: Loads Favorites from Core Data DB
+    func loadFavorites() {
+        self.favorites = repository.fetchAll(
+            type: CDArticle.self,
+            context: PersistentContainer.shared.viewContext
+        )
+            .map {  $0.toModel() }
     }
     
     // MARK: Subscribing to Favorites publisher
+    // FIXME: Still not 100% functional
     func subscribeToFavorites() {
         repository.subscribe(
             type: CDArticle.self,
@@ -42,6 +54,7 @@ final class FavoritesViewModel: ObservableObject {
                     }
                 },
                 receiveValue: { [weak self] receivedFavorites in
+                    print("Getting values: \(receivedFavorites)")
                     self?.favorites = receivedFavorites
                 })
             .store(in: &cancellables)

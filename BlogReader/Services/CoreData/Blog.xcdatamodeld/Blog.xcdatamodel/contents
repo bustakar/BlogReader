@@ -5,10 +5,11 @@
         <attribute name="createdAt" attributeType="Date" defaultDateTimeInterval="-147581580" usesScalarValueType="NO"/>
         <attribute name="id" attributeType="String"/>
         <attribute name="imageUrl" optional="YES" attributeType="String"/>
+        <attribute name="isFavorite" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="title" attributeType="String" defaultValueString="Empty"/>
         <attribute name="updatedAt" attributeType="Date" defaultDateTimeInterval="-147581580" usesScalarValueType="NO"/>
     </entity>
     <elements>
-        <element name="CDArticle" positionX="-63" positionY="-18" width="128" height="119"/>
+        <element name="CDArticle" positionX="-63" positionY="-18" width="128" height="134"/>
     </elements>
 </model>

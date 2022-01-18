@@ -17,7 +17,7 @@ extension NetworkRequestProtocol where Response: Decodable {
 
 extension NetworkRequestProtocol {
     var baseURL: String {
-        "https://personal-web-3f23d.firebaseio.com"
+        ""
     }
     
     var headers: [String : String] {

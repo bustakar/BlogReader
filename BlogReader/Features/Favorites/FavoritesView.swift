@@ -10,6 +10,9 @@ struct FavoritesView: View {
             searchedText: $viewModel.searchedText
         )
         .navigationTitle("Favorites")
+        .onAppear {
+            viewModel.loadFavorites()
+        }
     }
     
 }
