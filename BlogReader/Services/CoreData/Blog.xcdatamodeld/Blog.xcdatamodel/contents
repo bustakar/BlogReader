@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21D5025f" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CDArticle" representedClassName="CDArticle" syncable="YES">
+        <attribute name="content" attributeType="String" defaultValueString=""/>
+        <attribute name="createdAt" attributeType="Date" defaultDateTimeInterval="-147581580" usesScalarValueType="NO"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String"/>
+        <attribute name="title" attributeType="String" defaultValueString="Empty"/>
+        <attribute name="updatedAt" attributeType="Date" defaultDateTimeInterval="-147581580" usesScalarValueType="NO"/>
+    </entity>
+    <elements>
+        <element name="CDArticle" positionX="-63" positionY="-18" width="128" height="119"/>
+    </elements>
+</model>
